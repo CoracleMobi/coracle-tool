@@ -2,7 +2,7 @@
   "name": "coracle-tool",
   "main": "./lib/coracle-tool",
   "version": "0.4.0",
-  "description": "A short description of your package",
+  "description": "A short description of your package ",
   "keywords": [],
   "activationCommands": {
     "atom-workspace": "coracle-tool:toggle"
