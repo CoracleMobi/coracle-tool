@@ -1,7 +1,7 @@
 {
   "name": "coracle-tool",
   "main": "./lib/coracle-tool",
-  "version": "0.8.0",
+  "version": "1.9.0",
   "description": "A short description of your package ",
   "keywords": [],
   "activationCommands": {
