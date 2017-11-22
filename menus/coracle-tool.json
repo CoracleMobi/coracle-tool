@@ -1,26 +1,336 @@
 {
-  "context-menu": {
-    "atom-text-editor": [
-      {
-        "label": "Toggle coracle-tool",
-        "command": "coracle-tool:toggle"
-      }
-    ]
+  "context-menu":{
+    ".tree-view .file,.directory":
+      [
+
+        {
+          "label": "新建项目模板",
+          "submenu": [
+            {
+              "label":"空白应用",
+              "command":  "coracle:initApp,template=default"
+            },
+            {
+              "label":"底部导航",
+              "command":  "coracle:initApp,template=bottom"
+            },
+            {
+              "label":"首页导航",
+              "command":  "coracle:initApp,template=home"
+            },
+            {
+              "label":"侧边导航",
+              "command":  "coracle:initApp,template=slide"
+            }]
+        },
+
+        {
+          "label": "新建页面框架",
+          "submenu": [
+            {
+              "label":"page001",
+              "command":  "coracle:addFileTemplate,template=page001"
+            },
+            {
+              "label":"page002",
+              "command":  "coracle:addFileTemplate,template=page002"
+            },
+            {
+              "label":"page003",
+              "command":  "coracle:addFileTemplate,template=page003"
+            },
+            {
+              "label":"page004",
+              "command":  "coracle:addFileTemplate,template=page004"
+            },
+            {
+              "label":"page005",
+              "command":  "coracle:addFileTemplate,template=page005"
+            },
+            {
+              "label":"page006",
+              "command":  "coracle:addFileTemplate,template=page006"
+            },
+            {
+              "label":"page007",
+              "command":  "coracle:addFileTemplate,template=page007"
+            },
+            {
+              "label":"page008",
+              "command":  "coracle:addFileTemplate,template=page008"
+            },
+            {
+              "label":"page009",
+              "command":  "coracle:addFileTemplate,template=page009"
+            },
+            {
+              "label":"page010",
+              "command":  "coracle:addFileTemplate,template=page010"
+            },
+            {
+              "label":"page011",
+              "command":  "coracle:addFileTemplate,template=page011"
+            },
+            {
+              "label":"page012",
+              "command":  "coracle:addFileTemplate,template=page012"
+            },
+            {
+              "label":"page013",
+              "command":  "coracle:addFileTemplate,template=page013"
+            },
+            {
+              "label":"page014",
+              "command":  "coracle:addFileTemplate,template=page014"
+            },
+            {
+              "label":"page015",
+              "command":  "coracle:addFileTemplate,template=page015"
+            },
+            {
+              "label":"page016",
+              "command":  "coracle:addFileTemplate,template=page016"
+            },
+            {
+              "label":"page017",
+              "command":  "coracle:addFileTemplate,template=page017"
+            },
+            {
+              "label":"page018",
+              "command":  "coracle:addFileTemplate,template=page018"
+            },
+            {
+              "label":"page019",
+              "command":  "coracle:addFileTemplate,template=page019"
+            },
+            {
+              "label":"page020",
+              "command":  "coracle:addFileTemplate,template=page020"
+            },
+            {
+              "label":"page021",
+              "command":  "coracle:addFileTemplate,template=page021"
+            },
+            {
+              "label":"page022",
+              "command":  "coracle:addFileTemplate,template=page022"
+            },
+            {
+              "label":"page023",
+              "command":  "coracle:addFileTemplate,template=page023"
+            },
+            {
+              "label":"page024",
+              "command":  "coracle:addFileTemplate,template=page024"
+            },
+            {
+              "label":"page025",
+              "command":  "coracle:addFileTemplate,template=page025"
+            },
+            {
+              "label":"page026",
+              "command":  "coracle:addFileTemplate,template=page026"
+            }
+          ] }
+          ,
+          { "label": "wifi页面预览(ctrl-o)", "command": "coracle:previewWifi"},
+          { "label": "wifi增量同步(ctrl-i)", "command": "coracle:syncWifi"},
+          { "label": "wifi 全量同步", "command": "coracle:syncAllWifi"},
+          { "label": "查看 App日志+++++", "command": "coracle:wifiLog"},
+          { "label": "查看ip与端口", "command": "coracle:wifiInfo"}
+      ]
   },
   "menu": [
     {
-      "label": "Packages",
-      "submenu": [
+      "label":"用户",
+      "submenu":[{
+        "label":"登录",
+        "command":"coracle:login"
+        },
         {
-          "label": "coracle-tool",
-          "submenu": [
-            {
-              "label": "Toggle",
-              "command": "coracle-tool:toggle"
-            }
-          ]
-        }
-      ]
-    }
-  ]
+        "label":"注销",
+        "command":"coracle:exit"
+          }]
+    },
+   {
+
+     "label": "Packages",
+     "submenu":[{
+       "label":"coracle",
+       "submenu": [
+
+         { "label": "新建项目(ctrl-n)", "command": "coracle:createProject"},
+
+         {
+            "label": "代码管理",
+             "submenu": [
+                       {
+                          "label": "代码检出",
+                          "submenu": [
+                            {
+                              "label": "Coracle云端应用",
+                              "command": "coracle:chectoutfromCoracle"
+                            },
+                            {
+                              "label": "第三方git仓库",
+                              "command": "coracle:chectoutfromGit"
+                            }
+                          ]
+                      },
+                       {
+                         "label": "同步到云端",
+                         "command": "coracle:synctoCloud"
+                       },
+                       {
+                         "label": "从云端同步",
+                         "command": "coracle:syncfromCloud"
+                       }
+
+
+                      ]
+
+         },
+
+
+         {
+           "label": "新建项目模板",
+           "submenu": [
+             {
+               "label":"空白应用",
+               "command":  "coracle:initApp,template=default"
+             },
+             {
+               "label":"底部导航",
+               "command":  "coracle:initApp,template=bottom"
+             },
+             {
+               "label":"首页导航",
+               "command":  "coracle:initApp,template=home"
+             },
+             {
+               "label":"侧边导航",
+               "command":  "coracle:initApp,template=slide"
+             }]
+         },
+
+
+
+         {
+           "label": "新建页面框架",
+           "submenu": [
+             {
+               "label":"page001",
+               "command":  "coracle:addFileTemplate,template=page001"
+             },
+             {
+               "label":"page002",
+               "command":  "coracle:addFileTemplate,template=page002"
+             },
+             {
+               "label":"page003",
+               "command":  "coracle:addFileTemplate,template=page003"
+             },
+             {
+               "label":"page004",
+               "command":  "coracle:addFileTemplate,template=page004"
+             },
+             {
+               "label":"page005",
+               "command":  "coracle:addFileTemplate,template=page005"
+             },
+             {
+               "label":"page006",
+               "command":  "coracle:addFileTemplate,template=page006"
+             },
+             {
+               "label":"page007",
+               "command":  "coracle:addFileTemplate,template=page007"
+             },
+             {
+               "label":"page008",
+               "command":  "coracle:addFileTemplate,template=page008"
+             },
+             {
+               "label":"page009",
+               "command":  "coracle:addFileTemplate,template=page009"
+             },
+             {
+               "label":"page010",
+               "command":  "coracle:addFileTemplate,template=page010"
+             },
+             {
+               "label":"page011",
+               "command":  "coracle:addFileTemplate,template=page011"
+             },
+             {
+               "label":"page012",
+               "command":  "coracle:addFileTemplate,template=page012"
+             },
+             {
+               "label":"page013",
+               "command":  "coracle:addFileTemplate,template=page013"
+             },
+             {
+               "label":"page014",
+               "command":  "coracle:addFileTemplate,template=page014"
+             },
+             {
+               "label":"page015",
+               "command":  "coracle:addFileTemplate,template=page015"
+             },
+             {
+               "label":"page016",
+               "command":  "coracle:addFileTemplate,template=page016"
+             },
+             {
+               "label":"page017",
+               "command":  "coracle:addFileTemplate,template=page017"
+             },
+             {
+               "label":"page018",
+               "command":  "coracle:addFileTemplate,template=page018"
+             },
+             {
+               "label":"page019",
+               "command":  "coracle:addFileTemplate,template=page019"
+             },
+             {
+               "label":"page020",
+               "command":  "coracle:addFileTemplate,template=page020"
+             },
+             {
+               "label":"page021",
+               "command":  "coracle:addFileTemplate,template=page021"
+             },
+             {
+               "label":"page022",
+               "command":  "coracle:addFileTemplate,template=page022"
+             },
+             {
+               "label":"page023",
+               "command":  "coracle:addFileTemplate,template=page023"
+             },
+             {
+               "label":"page024",
+               "command":  "coracle:addFileTemplate,template=page024"
+             },
+             {
+               "label":"page025",
+               "command":  "coracle:addFileTemplate,template=page025"
+             },
+             {
+               "label":"page026",
+               "command":  "coracle:addFileTemplate,template=page026"
+             }
+           ] }
+           ,
+           { "label": "wifi页面预览(ctrl-o)", "command": "coracle:previewWifi"},
+           { "label": "wifi增量同步(ctrl-i)", "command": "coracle:syncWifi"},
+           { "label": "wifi 全量同步", "command": "coracle:syncAllWifi"},
+           { "label": "查看 App 日志++++----", "command": "coracle:wifiLog"},
+           { "label": "查看ip与端口", "command": "coracle:wifiInfo"}
+       ]
+     }]
+   }
+ ]
 }

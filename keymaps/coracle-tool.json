@@ -1,5 +1,12 @@
 {
   "atom-workspace": {
-    "ctrl-alt-o": "coracle-tool:toggle"
+    "ctrl-o": "coracle:previewWifi",
+    "ctrl-i": "coracle:syncWifi",
+    "ctrl-n": "coracle:createProject"
+  },
+  ".coracle-view-dialog":
+  {
+    "enter": "core:confirm",
+    "escape": "core:cancel"
   }
 }
