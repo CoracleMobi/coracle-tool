@@ -8,7 +8,7 @@
   "activationCommands": {
     "atom-workspace": "coracle-tool:toggle"
   },
-  "repository": "https://github.com/atom/coracle-tool",
+  "repository": "https://github.com/CoracleMobi/coracle-tool.git",
   "license": "MIT",
   "engines": {
     "atom": ">=1.0.0 <2.0.0"
