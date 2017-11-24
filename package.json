@@ -4,9 +4,6 @@
   "version": "1.21.0",
   "description": "A short description of your package ",
   "keywords": [],
-  "activationCommands": {
-    "atom-workspace": "coracle-tool:toggle"
-  },
   "repository": "https://github.com/CoracleMobi/coracle-tool.git",
   "license": "MIT",
   "engines": {
