@@ -1,7 +1,7 @@
 {
   "name": "coracle-tool",
   "main": "./lib/coracle-tool",
-  "version": "1.33.0",
+  "version": "1.34.0",
   "description": "A short description of your package ",
   "keywords": [],
   "repository": "https://github.com/CoracleMobi/coracle-tool.git",
