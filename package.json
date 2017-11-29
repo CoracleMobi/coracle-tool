@@ -12,10 +12,10 @@
   "dependencies": {
     "apicloud-tools-core": "^0.1.0",
     "atom-notify": "^1.1.0",
-    "atom-space-pen-views": "^2.2.0",
     "etch": "^0.12.7",
     "fs-plus": "^3.0.1",
     "promisificator": "^4.0.0",
-    "react": "^16.1.1"
+    "react": "^16.1.1",
+    "ws": "^3.3.2"
   }
 }
