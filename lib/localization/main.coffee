@@ -8,26 +8,24 @@ class ChineseSetting
 
   delay: () =>
     config = atom.config.get 'simplified-chinese-menu'
-    if config.useMenu
+    # if config.useMenu
       # Menu
-      @updateMenu(atom.menu.template, @M.Menu)
-      atom.menu.update()
-
-    if config.useContext
+    @updateMenu(atom.menu.template, @M.Menu)
+    atom.menu.update()
+    # if config.useContext
       # ContextMenu
-      @updateContextMenu()
-
-    if config.useSetting
+    @updateContextMenu()
+    # if config.useSetting
       # Settings (on init and open)
-      @updateSettings()
+    @updateSettings()
       #重载后切换过来时
-      atom.workspace.onDidChangeActivePaneItem (item) =>
-        if item and item.uri and item.uri.indexOf('atom://config') isnt -1
-          settingsTab = document.querySelector('.tab-bar [data-type="SettingsView"]')
-          chineseStatus = settingsTab.getAttribute('inChinese')
-          if chineseStatus isnt 'true'
-            settingsTab.setAttribute('inChinese','true')
-            @updateSettings(true)
+    atom.workspace.onDidChangeActivePaneItem (item) =>
+      if item and item.uri and item.uri.indexOf('atom://config') isnt -1
+        settingsTab = document.querySelector('.tab-bar [data-type="SettingsView"]')
+        chineseStatus = settingsTab.getAttribute('inChinese')
+        if chineseStatus isnt 'true'
+          settingsTab.setAttribute('inChinese','true')
+          @updateSettings(true)
 
   updateMenu : (menuList, def) ->
     return if not def
@@ -60,7 +58,7 @@ class ChineseSetting
     setTimeout(@delaySettings, 0, onSettingsOpen)
 
   delaySettings: (onSettingsOpen) ->
-    settings = require './../tools/settings'
+    settings = require './settings'
     settings.init()
 
   config:

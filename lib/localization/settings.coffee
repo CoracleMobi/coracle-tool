@@ -1,5 +1,5 @@
 #设置
-S = require __dirname + '/../def/settings.json'
+S = require __dirname + '/./tools/settings.json'
 
 applyToPanel = (e) ->
   # Settings panel
