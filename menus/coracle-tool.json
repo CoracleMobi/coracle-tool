@@ -45,6 +45,7 @@
        "submenu": [
 
          { "label": "新建项目(ctrl-n)", "command": "coracle:createProject"},
+         { "label": "云编译", "command": "coracle:cloudBuild"},
 
          {
             "label": "代码管理",
