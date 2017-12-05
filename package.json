@@ -17,7 +17,7 @@
     "promisificator": "^4.0.0",
     "react": "^16.1.1",
     "ws": "^3.3.2",
-    "git-plus": "7.0.7",
+    "git-plus": "7.10.0",
     "status-bar": "1.8.15"
   }
 }
