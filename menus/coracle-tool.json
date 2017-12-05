@@ -37,17 +37,6 @@
       ]
   },
   "menu": [
-    {
-      "label":"用户",
-      "submenu":[{
-        "label":"登录",
-        "command":"coracle:login"
-        },
-        {
-        "label":"注销",
-        "command":"coracle:exit"
-          }]
-    },
    {
 
      "label": "Packages",
