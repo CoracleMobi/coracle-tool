@@ -11,7 +11,7 @@ class MySelectListView extends SelectListView
    @focusFilterEditor()
 
  viewForItem: (item) ->
-   "<li>#{item}</li>"
+   "<li>#{item.projectName}</li>"
 
  confirmed: (item) ->
    this.trigger('navigate-to', item);
