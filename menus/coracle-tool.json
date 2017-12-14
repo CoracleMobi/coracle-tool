@@ -46,6 +46,8 @@
 
          { "label": "新建项目(ctrl-n)", "command": "coracle:createProject"},
          { "label": "云编译", "command": "coracle:cloudBuild"},
+         { "label": "欢迎页", "command": "coracle:welcomeorlogin"},
+         { "label": "注销/登录", "command": "coracle:exitorlogin"},
 
          {
             "label": "代码管理",
