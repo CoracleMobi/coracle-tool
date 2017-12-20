@@ -17,3 +17,7 @@ class MySelectListView extends SelectListView
    this.trigger('navigate-to', item);
 
  cancelled: ->
+   destroyPanel = @panel;
+   @panel = null;
+   if destroyPanel
+     destroyPanel.destroy();
