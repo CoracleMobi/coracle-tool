@@ -12,12 +12,8 @@
                            "label": "代码检出",
                            "submenu": [
                              {
-                               "label": "Coracle云端应用",
+                               "label": "云端应用",
                                "command": "coracle:chectoutfromCoracle"
-                             },
-                             {
-                               "label": "第三方git仓库",
-                               "command": "coracle:chectoutfromGit"
                              }
                            ]
                        },
@@ -46,6 +42,7 @@
 
          { "label": "新建项目(ctrl-n)", "command": "coracle:createProject"},
          { "label": "云编译", "command": "coracle:cloudBuild"},
+         { "label": "模块管理", "command": "coracle:moduleManage"},
          { "label": "欢迎页", "command": "coracle:welcomeorlogin"},
          { "label": "注销/登录", "command": "coracle:exitorlogin"},
 
