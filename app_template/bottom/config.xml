@@ -1,22 +1,14 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<widget id="A0000000000021"  version="0.0.1">
-    <name>bottomNavigation</name>
-    <description>
-        Example For APICloud.
-    </description>
-    <author email="developer@apicloud.com" href="http://www.apicloud.com">
-        Developer
-    </author>
-    <content src="index.html" />
-	<preference name="appBackground" value="rgba(0,0,0,0)"/>
-	<preference name="windowBackground" value="rgba(0,0,0,0)"/>
-	<preference name="frameBackgroundColor" value="rgba(0,0,0,0)"/>
-	<preference name="autoLaunch" value="true"/>
-	<preference name="autoUpdate" value="true"/>
-	<preference name="smartUpdate" value="false"/>
-	<preference name="debug" value="false"/>
-	<preference name="statusBarAppearance" value="true"/>
-	<permission name="location"/>
-	<permission name="internet"/>
-	<access origin="*"/>
+﻿<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<widget appId="ea87b9af-aaf3-49af-90ce-2fc24f7c604c" id="A0000000000023" version="1.0.0">
+	<name>corMobi</name>
+	<description/>
+	<content encoding="utf-8" src="src/index.html" />
+	<obfuscation>false</obfuscation>
+	<bgcolor>#fefefe</bgcolor>
+	<orientation>5</orientation>
+	<webapp/>
+	<config desc="statusBar" type="STATUSBARSTYLE">
+   	 	<permission platform="iOS" info="StatusBarStyle" value="Light"/>
+    	<permission platform="iOS" info="StatusBarStyleIOS7" value="1"/>
+  	</config>
 </widget>
