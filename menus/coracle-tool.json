@@ -48,6 +48,7 @@
          { "label": "模块管理", "command": "coracle:moduleManage"},
          { "label": "欢迎页", "command": "coracle:welcomeorlogin"},
          { "label": "注销/登录", "command": "coracle:exitorlogin"},
+         { "label": "注销/登录", "command": "coracle:aboutStudio"},
 
          {
             "label": "代码管理",
