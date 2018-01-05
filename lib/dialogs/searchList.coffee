@@ -16,6 +16,9 @@ class MySelectListView extends SelectListView
  confirmed: (item) ->
    this.trigger('navigate-to', item);
 
+ getFilterKey: () ->
+  'projectName';
+  
  cancelled: ->
    destroyPanel = @panel;
    @panel = null;
